@@ -1,0 +1,80 @@
+{
+  "projectType": "data-platform",
+  "projectName": "CoW Protocol Solver Rewards",
+  "projectDescription": "Data aggregation system for solver reimbursement and rewards distribution in the CoW Protocol ecosystem.",
+  "theme": "aspen",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Core Concepts",
+        "pages": [
+          "concepts/accounting-periods",
+          "concepts/slippage-accounting",
+          "concepts/reward-mechanism"
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "guides/installation",
+          "guides/generating-payouts",
+          "guides/validation",
+          "guides/docker-usage"
+        ]
+      },
+      {
+        "group": "Configuration",
+        "pages": [
+          "configuration/environment-variables",
+          "configuration/network-settings",
+          "configuration/reward-config"
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api/transfer-file",
+          "api/models",
+          "api/fetchers",
+          "api/queries"
+        ]
+      },
+      {
+        "group": "Development",
+        "pages": [
+          "development/testing",
+          "development/contributing"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automated solver reward calculation and distribution",
+    "Multi-chain support (Ethereum, Gnosis, Arbitrum, Base, etc.)",
+    "Dune Analytics integration for blockchain data aggregation",
+    "Slippage and network fee accounting",
+    "Safe multisig transaction generation",
+    "CSV export for manual transaction creation",
+    "Slack notifications for payout operations"
+  ],
+  "publicApiSurface": [
+    "src.fetch.transfer_file - Main entry point for generating solver payouts",
+    "src.data_sync.sync_data - Data synchronization utility",
+    "construct_payouts() - Calculate solver rewards and reimbursements",
+    "AccountingPeriod - Date interval management for accounting periods",
+    "RewardConfig - Network-specific reward configuration",
+    "Transfer - Payment transfer model",
+    "DuneFetcher - Dune Analytics query interface",
+    "MultiInstanceDBFetcher - Multi-database query client"
+  ]
+}
